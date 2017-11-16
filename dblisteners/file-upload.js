@@ -10,6 +10,12 @@ function getFilePaths(type, fileName, config) {
         filePath: config.imagesdir + fileName
       };
     }
+    case 'document': {
+      return {
+        fileName: '/patientimages' + fileName,
+        filePath: config.imagesdir + fileName
+      };
+    }
     case 'attachment': {
       return {
         fileName: '/attachments' + fileName,
